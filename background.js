@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     let query = encodeURIComponent(request.query);
     let xhr = new XMLHttpRequest();
     xhr.open("GET","https://app.customgpt.ai/api/projects/909/ask-me-anything/result?prompt=Ask+me+any+Amazon+question \
-    -H 'Authorization:97|8qZOUM1aeHZYwqmNEbyNkPpqkArkw7kZT7AQs5mm' \", true);
+    -H 97|8qZOUM1aeHZYwqmNEbyNkPpqkArkw7kZT7AQs5mm \", true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
