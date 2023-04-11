@@ -22,5 +22,3 @@ let observer = new MutationObserver(mutations => {
     alert(answer.textContent.trim());
   }
 });
-
-observer.observe(chatbotResponse, { childList: true });
