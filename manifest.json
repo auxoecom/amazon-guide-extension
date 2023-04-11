@@ -1,0 +1,25 @@
+{
+  "name": "Amazon Guide",
+  "version": "1.0",
+  "description": "Your on-demand Amazon expert",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
